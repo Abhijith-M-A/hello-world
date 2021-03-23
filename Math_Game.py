@@ -1,6 +1,10 @@
 import math
 import random
+import time
 
+print("\n 5 points will be awarded for each right answer. You win the game if you score 60 points")
+print("\n If you get 3 wrong answer, You Lose !!")
+time.sleep(3)
 a = 1
 b = 2
 c = 3
@@ -84,7 +88,7 @@ def scorefun():
     
 
 
-while(wrong<3 and score <15):
+while(wrong<3 and score <60):
 
     list = [1,2,3]
     char = random.choice(list)
@@ -109,7 +113,7 @@ if(wrong >2):
     print("\nGame over")
     print("\nYour score is", score)
 
-if(score == 15):
+if(score == 60):
     print("\nYou won the game")
 
 
