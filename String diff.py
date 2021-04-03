@@ -16,7 +16,7 @@ def checker():
     counter = 1
     global length
     global length1
-    
+    print(arr[i],brr[j],i,j)
     while(counter>0):
         r = i
         q=j
@@ -40,7 +40,7 @@ def checker():
             break
             
 
-
+    print(count,'count')
     return(count)
 def validate(p):
     global length
@@ -50,7 +50,7 @@ def validate(p):
         if(j>q):
             if(p==brr[j]):
                 f = checker()
-                
+                print(f,'f')
                 return(f)
                 
     return(f)       
@@ -60,7 +60,7 @@ for i in range(0,len(arr)):
     if(i>r):
 
         b = validate(arr[i])
-        
+        print(b,'b')
 
         if(b==1 and i!=j):
             drr.append(0)
@@ -68,7 +68,7 @@ for i in range(0,len(arr)):
             drr.append(b)
 
 tempor = sum(drr)
-
+print(drr)
 if(len(brr)>len(arr)):
     
     diff = len(brr) - tempor
